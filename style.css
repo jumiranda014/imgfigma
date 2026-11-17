@@ -1,25 +1,27 @@
+/* Configurações Globais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0 auto;
+    /* Elemento centralizado */
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
 }
-
 
 body {
-  font-family: 'Bai Jamjuree', sans-serif;
-  color: hsl(201, 11%, 66%); 
-  background-color: #ffffff;
-  background-image: url(/img/Bitmap.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 363px;
-  
-  text-align: center;
+    /* Garantir que todo o fluxo do site esteja centralizado na página */
+    display: flex;
+    flex-direction: column;
+    background-image: url('Bitmap.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
 }
 
-
-
-
+/* Quais tamanho e estilos que não mudam */
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
 main {
   max-width: 1120px;
   margin: 0 auto;
@@ -316,4 +318,8 @@ footer {
     grid-template-columns: repeat(3, 1fr); 
     gap: 16px 32px;
   }
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
 }
